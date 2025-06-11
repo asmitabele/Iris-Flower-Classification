@@ -1,23 +1,21 @@
 # Iris-Flower-Classification<br>
 ## Iris Species in the Dataset<br>
 Setosa<br>
-Versicolor<br>
-Virginica<br>
-Total Instances: 150 flowers (50 per class)<br>
+ Versicolor<br>
+ Virginica<br>
+ There are 150 flowers in all (50 in each class).<br>
 
-🔧 Step-by-Step Approach with Code<br>
+ 🔧 A Methodical Approach Using Code<br>
 
-✅ Step 1: Import Libraries<br>
-import numpy as np
-import pandas as pd
-import seaborn as sns<br>
+ ✅ First, import libraries<br>
+ import seaborn as sns, import pandas as pd, and import numpy as np.<br>
 
 ✅ Step 2: Load Dataset<br>
 iris = load_iris()
 df = pd.DataFrame(data=iris.data, columns=iris.feature_names)<br>
 
 ✅ Step 3: Exploratory Data Analysis (EDA)<br>
-.describe() gives summary stats.
+df.describe() gives summary stats.
 
 pairplot() helps visualize relationships between features colored by species.<br>
 
